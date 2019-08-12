@@ -3,11 +3,11 @@ FROM debian:wheezy
 RUN apt-get -y update
 RUN apt-get -y install openjdk-7-jre-headless wget
 
-RUN wget -q https://s3.amazonaws.com/Minecraft.Download/versions/1.9.2/minecraft_server.1.9.2.jar
+RUN wget -q https://launcher.mojang.com/v1/objects/3dc3d84a581f14691199cf6831b71ed1296a9fdf/server.jar
 
 WORKDIR /data
 VOLUME /data
 
 EXPOSE 25565
 
-CMD echo eula=true > /data/eula.txt && java -jar /minecraft_server.1.9.2.jar
+CMD echo eula=true > /data/eula.txt && java -jar /server.jar
