@@ -1,4 +1,3 @@
-#FROM debian:wheezy
 FROM debian
 
 RUN apt-get -y update
