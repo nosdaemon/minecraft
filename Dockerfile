@@ -4,8 +4,9 @@ RUN apt-get -y update
 #RUN apt-get -y install -t jessie-backports  openjdk-8-jre-headless ca-certificates-java
 RUN apt-get -y install openjdk-11-jdk-headless wget
 
-# 1.15.2
-RUN wget -q https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar
+# 1.16.3
+RUN wget -q https://launcher.mojang.com/v1/objects/f02f4473dbf152c23d7d484952121db0b36698cb/server.jar
+
 
 WORKDIR /data
 VOLUME /data
