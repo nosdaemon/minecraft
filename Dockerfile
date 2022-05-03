@@ -5,7 +5,7 @@ RUN apt-get -y update
 RUN apt-get -y install openjdk-17-jdk-headless wget
 
 # 1.18.2
-RUN wget -q -p / https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
+RUN wget -q -P / https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
 
 
 WORKDIR /data
