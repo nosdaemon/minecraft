@@ -13,4 +13,4 @@ VOLUME /data
 
 EXPOSE 25565
 
-CMD echo eula=true > /data/eula.txt && java -Xmx4G -Xms4G -XX:ParallelGCThreads=2 -XX:+AggressiveOpts -jar /server.jar
+CMD echo eula=true > /data/eula.txt && java -Xmx1024M -Xms1024M -XX:ParallelGCThreads=2 -XX:+AggressiveOpts -jar /server.jar nogui
