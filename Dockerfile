@@ -5,7 +5,7 @@ RUN apt-get -y update
 RUN apt-get -y install openjdk-11-jdk-headless wget
 
 # 1.16.3
-RUN wget -q https://launcher.mojang.com/v1/objects/f02f4473dbf152c23d7d484952121db0b36698cb/server.jar
+RUN wget -q https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
 
 
 WORKDIR /data
