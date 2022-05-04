@@ -14,4 +14,4 @@ VOLUME /data
 
 EXPOSE 25565
 
-CMD echo eula=true > /data/eula.txt && java -Xmx8192M -Xms128M -jar /server.jar nogui
+CMD echo eula=true > /data/eula.txt && java -server -Xmx8192M -Xms512M -XX:+UseG1GC -jar /server.jar nogui
